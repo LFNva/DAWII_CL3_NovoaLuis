@@ -1,0 +1,24 @@
+<div>
+    <h2>Calculadora de Promedio de Notas</h2>
+  
+    <form>
+      <label for="nota1">Nota 1:</label>
+      <input type="number" id="nota1" [(ngModel)]="nota1" name="nota1" required>
+  
+      <label for="nota2">Nota 2:</label>
+      <input type="number" id="nota2" [(ngModel)]="nota2" name="nota2" required>
+  
+      <label for="nota3">Nota 3:</label>
+      <input type="number" id="nota3" [(ngModel)]="nota3" name="nota3" required>
+  
+      <label for="nota4">Nota 4:</label>
+      <input type="number" id="nota4" [(ngModel)]="nota4" name="nota4" required>
+  
+      <button type="button" (click)="calcularPromedio()">Calcular Promedio</button>
+    </form>
+  
+    <div *ngIf="promedio > 0">
+      <h3>El promedio de notas es: {{ promedio.toFixed(2) }}</h3>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

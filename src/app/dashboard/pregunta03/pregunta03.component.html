@@ -1,0 +1,20 @@
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Episodio</th>
+        <th scope="col">Día de Salida</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let episodes of episodes">
+            <td>{{episodes.id}}</td>
+            <td>{{episodes.name}}</td>
+            <td>{{episodes.episode}}</td>
+            <td>{{episodes.air_date}}</td>
+        </tr>
+    </tbody>
+    </table>
+<router-outlet></router-outlet>
